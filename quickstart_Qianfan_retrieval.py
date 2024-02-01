@@ -43,7 +43,8 @@ docs = loader.load()
 embeddings = QianfanEmbeddingsEndpoint()
 #embeddings = OllamaEmbeddings()
 
-text_splitter = RecursiveCharacterTextSplitter()
+###### max length 1000, here we 1use RecursiveCharacterTextSplitter to split the documents
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=900)
 documents = text_splitter.split_documents(docs)
 #print(documents)
 #vector = FAISS.from_documents(documents, embeddings)
