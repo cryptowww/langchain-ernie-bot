@@ -3,6 +3,8 @@
 
 # quickstart_Qianfan_agent.py
 
+import sys
+sys.path.append('..')
 import settings
 from langchain_community.chat_models import QianfanChatEndpoint
 

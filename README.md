@@ -62,9 +62,34 @@ curl -d "grant_type=client_credentials&client_id=QQ1WV....dWzhj21Q&client_secret
 
 2. python
 
-[Get the access_key of Qianfan](./get_qianfan_access_token.py)
+[Get the access_key of Qianfan](./quickstart/get_qianfan_access_token.py)
 
 ## to fix
 
 Qianfan has not provide agent . so you can replace the model with openai , if you have a openai API_KEY.
-[openAI agent](./quickstart_Qianfan_agent.py) , [langserver](./quickstart_Qianfan_LangServer.py) with openAI.
+[openAI agent](./quickstart/quickstart_Qianfan_agent.py) , [langserver](./quickstart/quickstart_Qianfan_LangServer.py) with openAI.
+
+## quickstart
+
+according the documention, I dev the following code:
+
+1. LLM Chain
+
+- [LLM with Qianfan](./quickstart/quickstart_QianfanLLM.py)
+- [Chat with Qianfan](./quickstart/quickstart_QianfanChat.py)
+
+2. Retrieval Chain
+
+- [Retrieval with Qianfan](./quickstart/quickstart_Qianfan_retrieval.py)
+- [Conversation Retrieval with Qianfan](./quickstart/quickstart_Qianfan_Conversation_Retrieval.py)
+
+3. Agent
+
+you can run the code with OpenAI, but it's Qianfan in the code.
+- [Agent](./quickstart/quickstart_Qianfan_agent.py)
+
+4. LangServer
+
+- [LangServer](./quickstart/quickstart_Qianfan_LangServer.py)
+
+

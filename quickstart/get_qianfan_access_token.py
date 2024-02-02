@@ -1,7 +1,9 @@
 import requests
 import json
-import settings
 import os
+import sys
+sys.path.append('..')
+import settings
 
 def main():
         

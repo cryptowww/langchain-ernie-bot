@@ -3,6 +3,8 @@
 
 # Quickstart_Qianfan_LangServer.py
 
+import sys
+sys.path.append('..')
 import settings
 from typing import List
 

@@ -3,6 +3,8 @@
 
 # quickstart_QianfanLLM.py
 
+import sys
+sys.path.append('..')
 import settings
 from langchain_community.llms import QianfanLLMEndpoint
 
