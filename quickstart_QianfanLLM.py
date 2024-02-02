@@ -3,14 +3,12 @@
 
 # quickstart_QianfanLLM.py
 
-from config import settings
+import settings
 from langchain_community.llms import QianfanLLMEndpoint
 
 llm = QianfanLLMEndpoint(
         streaming=True,
         model="ERNIE-Bot-turbo",
-        qianfan_ak=settings.QIANFAN_API_Key,
-        qianfan_sk=settings.QIANFAN_API_SECRET,
         verbose=True,
         temperature=0.9,
         top_p=0.9,

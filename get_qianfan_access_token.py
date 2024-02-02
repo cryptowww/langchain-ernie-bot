@@ -1,11 +1,11 @@
 import requests
 import json
-from config import settings
-
+import settings
+import os
 
 def main():
         
-    url = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id="+settings.QIANFAN_API_KEY+"&client_secret="+settings.QIANFAN_API_SECRET
+    url = "https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id="+os.getenv("QIANFAN_AK")+"&client_secret="+os.getenv("QIANFAN_SK")
     
     payload = ""
     headers = {

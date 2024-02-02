@@ -3,7 +3,7 @@
 
 # quickstart_Qianfan_retrieval.py
 
-from config import settings
+import settings
 from langchain_community.llms import QianfanLLMEndpoint
 
 from langchain_community.document_loaders import WebBaseLoader
@@ -17,12 +17,6 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
 from langchain.chains import create_retrieval_chain
-
-import os
-os.environ["QIANFAN_AK"]=settings.QIANFAN_API_Key
-os.environ["QIANFAN_SK"]=settings.QIANFAN_API_SECRET
-#print(os.environ['QIANFAN_AK'])
-#print(os.environ['QIANFAN_SK'])
 
 llm = QianfanLLMEndpoint(
         streaming=True,
